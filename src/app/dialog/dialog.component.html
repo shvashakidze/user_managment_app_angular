@@ -13,13 +13,7 @@
         <mat-label>Email</mat-label>
         <input formControlName="email" matInput type="email" placeholder="Email">
       </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>Gender</mat-label>
-        <mat-select  formControlName="gender" placeholder="Gender">
-          <mat-option value="Male">Male</mat-option>
-          <mat-option value="Female">Female</mat-option>
-          </mat-select>
-      </mat-form-field>
+      
       <mat-form-field appearance="outline">
         <mat-label>Birth day</mat-label>
         <input formControlName="birthDay" matInput [matDatepicker]="picker">

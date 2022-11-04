@@ -23,7 +23,6 @@ export class DialogComponent implements OnInit {
       surname : ['',Validators.required],
       email : ['',Validators.required],
       birthDay : ['',Validators.required],
-      gender : ['',Validators.required],
       idCard  : ['',Validators.required]
     });
     if(this.editData){
@@ -32,7 +31,6 @@ export class DialogComponent implements OnInit {
       this.userForm.controls['surname'].setValue(this.editData.surname);
       this.userForm.controls['email'].setValue(this.editData.email);
       this.userForm.controls['birthDay'].setValue(this.editData.birthDay);
-      this.userForm.controls['gender'].setValue(this.editData.gender);
       this.userForm.controls['idCard'].setValue(this.editData.idCard);
     }
   }

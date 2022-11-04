@@ -1,12 +1,11 @@
 {
   "userList": [
     {
-      "name": "shota",
-      "surname": "vashakidze",
-      "email": "shot@gmail.com",
+      "name": "Shota",
+      "surname": "Vashakidze",
+      "email": "sh@gmail.com",
       "birthDay": "1991-01-29T08:00:00.000Z",
-      "gender": "Male",
-      "idCard": "37001049075",
+      "idCard": "11111111111",
       "id": 1
     }
   ],
