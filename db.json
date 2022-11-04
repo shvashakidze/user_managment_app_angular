@@ -3,20 +3,11 @@
     {
       "name": "shota",
       "surname": "vashakidze",
-      "email": "shotavashakidze55@gmail.com",
+      "email": "shot@gmail.com",
       "birthDay": "1991-01-29T08:00:00.000Z",
       "gender": "Male",
       "idCard": "37001049075",
       "id": 1
-    },
-    {
-      "name": "gssg",
-      "surname": "asas",
-      "email": "asadsd@gmail.com",
-      "birthDay": "1991-12-21T08:00:00.000Z",
-      "gender": "Male",
-      "idCard": "010101229230",
-      "id": 2
     }
   ],
   "comments": [
