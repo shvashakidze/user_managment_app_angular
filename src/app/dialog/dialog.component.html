@@ -1,0 +1,39 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="userForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input formControlName="name" matInput placeholder="Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Surname</mat-label>
+        <input formControlName="surname" matInput placeholder="Surname">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput type="email" placeholder="Email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Gender</mat-label>
+        <mat-select  formControlName="gender" placeholder="Gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+          </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Birth day</mat-label>
+        <input formControlName="birthDay" matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>ID Card</mat-label>
+        <input formControlName="idCard" matInput placeholder="ID Card">
+      </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addUser()">{{actionBtn}}</button>
+</div>
