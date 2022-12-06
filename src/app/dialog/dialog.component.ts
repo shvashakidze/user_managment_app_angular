@@ -24,6 +24,7 @@ export class DialogComponent implements OnInit {
       email : ['',Validators.required],
       birthDay : ['',Validators.required],
       idCard  : ['',Validators.required]
+      
     });
     if(this.editData){
       this.actionBtn = "Update";
@@ -32,6 +33,7 @@ export class DialogComponent implements OnInit {
       this.userForm.controls['email'].setValue(this.editData.email);
       this.userForm.controls['birthDay'].setValue(this.editData.birthDay);
       this.userForm.controls['idCard'].setValue(this.editData.idCard);
+      
     }
   }
   addUser(){

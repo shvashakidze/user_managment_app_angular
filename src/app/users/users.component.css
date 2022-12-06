@@ -22,7 +22,8 @@
   input{
     width: 100px;
     margin-left: 20px;
-    
+    border-style: double;
+    border-block-end-style: double;
     border-radius: 5px;
 
     
