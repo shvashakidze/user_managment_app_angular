@@ -1,13 +1,54 @@
 {
   "userList": [
     {
-      "name": "Shota",
-      "surname": "Vashakidze",
-      "email": "sh@gmail.com",
-      "birthDay": "1991-01-29T08:00:00.000Z",
-      "idCard": "11111111111",
+      "name": "giorgi",
+      "surname": "giorgadze",
+      "email": "wqwqasss@gmail.com",
+      "category": "VIP User",
+      "birthDay": "2001-12-01T08:00:00.000Z",
+      "idCard": "12121212",
+      "status": "Active",
       "id": 1
+    },
+    {
+      "name": "shota",
+      "surname": "vashakidze",
+      "email": "shotavashakidze55@gmail.com",
+      "category": "VIP User",
+      "birthDay": "1991-01-29T08:00:00.000Z",
+      "idCard": "1211416224",
+      "status": "Suspended",
+      "id": 2
+    },
+    {
+      "name": "davit ",
+      "surname": "davitashvili",
+      "email": "www@gmail.com",
+      "category": "Idle User",
+      "birthDay": "1934-12-12T08:00:00.000Z",
+      "idCard": "23221111111",
+      "status": "Suspended",
+      "id": 3
+    },
+    {
+      "name": "rete",
+      "surname": "qwe",
+      "email": "qwq@gmail.com",
+      "category": "Idle User",
+      "birthDay": "2022-12-15T08:00:00.000Z",
+      "idCard": "3131231232",
+      "status": "Blocked",
+      "id": 4
+    },
+    {
+      "name": "shot",
+      "surname": "vasha",
+      "email": "asasa@1asa",
+      "birthDay": "2022-12-27T08:00:00.000Z",
+      "idCard": "5464654654654",
+      "id": 5
     }
+    
   ],
   "comments": [
     {

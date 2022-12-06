@@ -1,0 +1,49 @@
+
+
+<form [formGroup]="userForm" class="form-container">
+    <mat-card style="margin: 10px 400px 30px 400px;">
+        <mat-card-header>
+            <mat-card-title>Add User</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row" style="margin-left: 100px " >
+               <div class="col-md-6" > 
+              <mat-form-field style="width: 300px;" appearance="outline">
+               <mat-label>Name</mat-label>
+               <input formControlName="name" matInput placeholder="Name">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6"> 
+    <mat-form-field appearance="outline" style="width: 300px;">
+      <mat-label>Surname</mat-label>
+      <input formControlName="surname" matInput placeholder="Surname">
+    </mat-form-field>
+    </div>
+    <div class="col-md-6"> 
+    <mat-form-field appearance="outline" style="width: 300px;">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput type="email" placeholder="Email">
+    </mat-form-field>
+    </div>
+    <div class="col-md-6"> 
+    <mat-form-field appearance="outline" style="width: 300px;">
+      <mat-label>Birth day</mat-label>
+      <input formControlName="birthDay" matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    </div>
+    <div class="col-md-6"> 
+    <mat-form-field appearance="outline" style="width: 300px;">
+      <mat-label>ID Card</mat-label>
+      <input formControlName="idCard" matInput placeholder="ID Card">
+    </mat-form-field>
+</div>
+        </div>
+        
+  <button style="margin-left: 100px; width: 300px;" mat-raised-button color="primary" (click)="addUser()" >Add</button>
+</mat-card-content>
+</mat-card>
+  </form>
+  

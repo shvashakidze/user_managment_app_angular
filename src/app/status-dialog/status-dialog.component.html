@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Add Status</h1>
+<div mat-dialog-content>
+    <form [formGroup]="userForm">
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="status" placeholder="Status">
+        <mat-option value="Active">Active</mat-option>
+        <mat-option value="Blocked">Blocked</mat-option>
+        <mat-option value="Suspended">Suspended</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addUser()">{{actionBtn}}</button>
+</div>

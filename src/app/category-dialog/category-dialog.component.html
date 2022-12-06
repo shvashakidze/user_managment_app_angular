@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Add Category</h1>
+<div mat-dialog-content>
+    <form [formGroup]="userForm">
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category" placeholder="Category">
+        <mat-option value="VIP User">VIP User</mat-option>
+        <mat-option value="Idle User">Idle User</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addUser()">{{actionBtn}}</button>
+</div>
